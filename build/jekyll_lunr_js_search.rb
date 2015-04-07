@@ -72,6 +72,7 @@ module Jekyll
             "url" => entry.url,
             "date" => entry.date,
             "categories" => entry.categories,
+            "short" => entry.body.split.slice(0, 60).join(" "),
             "body" => entry.body
           }
           @index.add(doc)
